@@ -18,33 +18,32 @@ let MyDate = function(day, month, year) {
     }
 
     this.setDay = function(day) {
-          return  day;
+          this.day = day;
     }
     this.setMonth = function(month) {
-        return  month;
+        this.month = month;
     }
     this.setYear = function(year) {
-        return year;
+        this.year = year;
     }
 };
 
 
 //let date = new MyDate(8, 8, 1994);
 
-//let day = date.getDay();
-
-//let month = date.getMonth();
-
-//let year = date.getYear();
-
-//alert(day + "/" + month + "/" + year);
 
 let date = new MyDate();
 
-let day = date.setDay(8);
+date.setDay(8);
 
-let month = date.setMonth(4);
+date.setMonth(4);
 
-let year = date.setYear(2019);
+date.setYear(2019);
+
+let day = date.getDay();
+
+let month = date.getMonth();
+
+let year = date.getYear();
 
 alert(day + "/" + month + "/" + year);
